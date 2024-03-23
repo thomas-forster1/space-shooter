@@ -10,17 +10,18 @@
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar"
-        <div id="unity-logo"></div
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
       <div id="unity-warning"> </div>
-
-
-      s
-     
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Space Shooter</div>
+      </div>
     </div>
     <script>
 
@@ -58,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/web_gl_build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web_gl_build.data.gz",
-        frameworkUrl: buildUrl + "/web_gl_build.framework.js.gz",
-        codeUrl: buildUrl + "/web_gl_build.wasm.gz",
+        dataUrl: buildUrl + "/web_gl_build.data.br",
+        frameworkUrl: buildUrl + "/web_gl_build.framework.js.br",
+        codeUrl: buildUrl + "/web_gl_build.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "StudioBreakfest",
         productName: "Space Shooter",
